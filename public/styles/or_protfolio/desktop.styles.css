@@ -70,35 +70,6 @@ a:hover{
  padding:30px ;
 }
 
-#work{
-    text-align: center;
-    min-height: 50vh;
-    background-color:aqua;
-}
-
-#work a{
-    color: brown;
-    font-size: 40px;
-    text-decoration: underline;
-    padding: 5px;
-}
-#work a:hover{
-    background-color: azure;
-    border-radius: 10px;
-    font-size: 40px;
-    text-decoration: underline;
-}
-
-.images{
-    padding: 100px;
-}
-#footer{
-    text-align: center;
-    padding: 10px;
-    background-color: gray;
-}
-
-
 
 
 
