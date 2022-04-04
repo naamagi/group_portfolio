@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+.main_page ul{
+    display: flex;
+    background-color: black;
+    color: white;
+    justify-content: center;
+}
+.main_page ul li{
+    padding: 20px;
+}
+.main_page ul li:hover{
+    cursor: pointer;
+    color: green;
+}
+
+.summary{
+    /* border: 1px solid; */
+    height: 100vh;
+    text-align: center;
+}
+
+.summary figure{
+    /* border: 1px solid; */
+    padding: 100px;
+}
+.summary p{
+    /* border: 1px solid; */
+    padding: 20px;
+    font-size: 30px;
+}
+.about{
+    border: 1px solid;
+    height: 100vh;
+    text-align: center;
+}
+
+
+
+
+
