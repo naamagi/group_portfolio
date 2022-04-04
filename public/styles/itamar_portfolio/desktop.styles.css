@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.hero {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: steelblue;
+}
+
+.hero h1 {
+  margin: 1rem;
+  font-size: 3rem;
+}
+
+.hero p {
+  width: 30%;
+}
+
+/* Showcase */
+
+.showcase {
+  height: 100vh;
+  background: steelblue;
+}
+.showcase h1 {
+  text-align: center;
+  padding: 1rem;
+}
+
+.showcase-container {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.showcase-container .showcase-container-top {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+  align-items: center;
+  justify-items: center;
+}
+
+.showcase-top-item1,
+.showcase-top-item2,
+.showcase-top-item3 {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.showcase-container .showcase-container-bottom {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-items: center;
+  grid-gap: 3rem;
+}
+
+.showcase-bottom-item1,
+.showcase-bottom-item3 {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.showcase-container-bottom a {
+  padding: 1rem;
+}
+.showcase-bottom-item1 a,
+.showcase-bottom-item3 a {
+  transition: all 1s ease;
+}
+
+.showcase-bottom-item1 a:hover,
+.showcase-bottom-item3 a:hover {
+  font-size: 1.5rem;
+  opacity: 0.7;
+}
+
+.showcase-container-bottom .showcase-bottom-item2 {
+  transition: all 1s ease;
+}
+.showcase-container-bottom .showcase-bottom-item2:hover {
+  transform: scale(1.5);
+}
+
+
+.showcase-bottom-item1 .link1 i {
+  color: orange;
+}
+
+.showcase-bottom-item1 .link2 i {
+  color: blue;
+}
+
+.html,
+.css,
+.projects {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: start;
+  align-items: center;
+  padding-top: 3rem;
+}
+
+#html {
+  background-color: coral;
+}
+#css {
+  background-color: rebeccapurple;
+}
+#projects {
+  background-color: aqua;
+}
+
+.footer {
+  background: #555;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer .socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+.footer .socials a {
+  display: block;
+  padding: 2rem;
+}
+
+.footer .socials a i:hover {
+  color:#555;
+  background: #fff;
+}
+
+
+/* animations */
+
