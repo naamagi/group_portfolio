@@ -23,6 +23,8 @@ a {
   color: inherit;
 }
 
+/* Hero */
+
 .hero {
   width: 100%;
   display: flex;
@@ -68,6 +70,10 @@ a {
   grid-gap: 1rem;
   align-items: center;
   justify-items: center;
+}
+
+.showcase-container .showcase-container-top img {
+  border-radius: 50%;
 }
 
 .showcase-top-item1,
