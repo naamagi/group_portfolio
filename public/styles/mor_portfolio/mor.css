@@ -152,3 +152,10 @@ main p {
   text-align: left;
   line-height: 2.5rem;
 }
+
+#about-page main h1 { 
+  text-align: left;
+  font-size: 3.2rem; 
+  padding-left: 6rem;
+  padding-bottom: 1rem;
+}
