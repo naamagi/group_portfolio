@@ -74,11 +74,13 @@ a:hover{
    min-height: 50vh;
    background-color:aqua;
 }
-
+#work figure{
+    padding: 100px;
+}
 #work a{
     text-decoration: underline;
     font-size: 25px;
-    padding: 5px;
+    padding: 20px;
 }
 #work a:hover{
     background-color: azure;
