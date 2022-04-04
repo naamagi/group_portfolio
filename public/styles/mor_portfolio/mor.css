@@ -16,6 +16,7 @@
 body {
   width: 100vw;
   height: 100vh;
+  color: #333;
 }
 
 /* Utilities */
@@ -60,7 +61,6 @@ main p {
 .footer-container {
   text-align: center;
   height: 10%;
-  background-color: #15F2D0; 
   display: flex;
  }
 
@@ -103,7 +103,7 @@ li a {
   color: black;
 }
 
-li a:hover {
+.nav-container li a:hover {
   background-color: rgba(0, 0, 0, 0.3);
   border-radius: 20px;
 }
@@ -136,6 +136,7 @@ li a:hover {
 }
 
 #home-page .learn-more {
+  padding-top: 1rem;
   text-align: center;
   line-height: 2.5rem;
   font-size: 0.9rem;
@@ -149,26 +150,13 @@ li a:hover {
 
  /* About Me */
  #about-page {
-   /* background-color: #FFFfb7; */
    background-color: #ff7e72;
   }
   
   #footer-about {
-    /* background-color: #FFF192; */
     /* background-color: #ff3333; */
     background-color: #ff5456;
  }
-
- /* #about-page main p {
-  font-size: 1.4rem;
-  padding: 6rem;
-  text-align: left;
-  line-height: 2.5rem;
-} */
-
-#about-page main {
-  overflow: scroll;
-}
 
 #about-page main p{
   padding: 1rem 6rem;
@@ -192,4 +180,59 @@ li a:hover {
   text-align: left;
   font-size: 3.2rem; 
   padding: 1rem 6rem;
+}
+
+
+/* Contact */
+#contact-page {
+background-color: #fcd985;
+}
+
+#footer-contact {
+  background-color: #ffd664;
+ }
+
+#contact-page main h1 { 
+text-align: center;
+font-size: 4.2rem; 
+padding: 1rem 6rem;
+}
+
+#contact-page main .links {
+  display: flex;
+  padding-top: 2rem;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+/* Projects */
+#projects-page {
+ background-color: #333;
+}
+
+#projects-page nav * {
+  color: #f4f4f4;
+}
+
+#footer-projects {
+  background-color: #212121;
+  color: #f4f4f4;
+}
+
+#projects-page main h1 { 
+  text-shadow: 4px 2px #e0e0e0;
+  color: #f4f4f4;
+  text-align: center;
+  font-size: 4.2rem; 
+  padding: 1rem 6rem;
+}
+
+#projects-page main .icons {
+  display: flex;
+  padding-top: 2rem;
+  justify-content: center;
+  gap: 2rem;
+  font-size: 2rem;
+  text-shadow: 2px 1px #e0e0e0;
+  color: #f4f4f4;
 }
