@@ -392,12 +392,32 @@ a:hover {
 .psy {
   position: relative;
 }
-.psy .psy-info {
-  display: none;
-  z-index: 100;
 
+.psy-info-hidden {
+  display: none;
+  transition: all 1s ease;
 }
 
-.psy:hover .psy-info {
+.psy .psy-info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  align-items: center;
+  transition: all 1s ease;
+  opacity: 0;
+}
+
+.psy .psy-info h3 {
+  grid-column: 1 / span 2;
+}
+
+.psy .psy-info p {
+  font-size: 1.3rem;
+}
+
+.psy:hover .psy-info-hidden {
   display: block;
+}
+.psy:hover .psy-info {
+  opacity: 1;
 }
