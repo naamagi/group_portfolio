@@ -9,7 +9,7 @@ body {
   width: 100%;
   height: 100%;
   font-family: Arial, Helvetica, sans-serif;
-  color: #fff;
+  scroll-behavior: smooth;
 }
 
 img {
@@ -26,130 +26,192 @@ a {
 /* Hero */
 
 .hero {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  background: steelblue;
-}
-
-.hero h1 {
-  margin: 1rem;
-  font-size: 3rem;
-}
-
-.hero p {
-  width: 30%;
-}
-
-/* Showcase */
-
-.showcase {
   height: 100vh;
-  background: steelblue;
-}
-.showcase h1 {
-  text-align: center;
-  padding: 1rem;
-}
-
-.showcase-container {
-  display: flex;
-  flex-direction: column;
-  width: 80%;
-  margin: auto;
-  justify-content: center;
-  align-items: center;
-}
-
-.showcase-container .showcase-container-top {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 1rem;
   align-items: center;
   justify-items: center;
+  text-align: center;
+  background: url('../../assets/images/itamar_img/fire.jpg') center center/cover;
+  color: #fff;
 }
 
-.showcase-container .showcase-container-top img {
-  border-radius: 50%;
+.hero h1 {
+  grid-column: 1 / span 3;
+  padding: 2rem;
+  animation: come-in-top 0.3s ease-out forwards;
 }
 
-.showcase-top-item1,
-.showcase-top-item2,
-.showcase-top-item3 {
-  display: grid;
-  grid-template-rows: repeat(2, 1fr);
+@keyframes come-in-top {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  
 }
 
-.showcase-container .showcase-container-bottom {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  align-items: center;
-  justify-items: center;
-  grid-gap: 3rem;
-}
-
-.showcase-bottom-item1,
-.showcase-bottom-item3 {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-
-.showcase-container-bottom a {
+.hero p {
+  grid-column: 2;
   padding: 1rem;
-}
-.showcase-bottom-item1 a,
-.showcase-bottom-item3 a {
-  transition: all 1s ease;
+  text-align: center;
+  animation: fade-in-place 0.6s ease-out forwards;
 }
 
-.showcase-bottom-item1 a:hover,
-.showcase-bottom-item3 a:hover {
-  font-size: 1.5rem;
-  opacity: 0.7;
+@keyframes fade-in-place {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
-.showcase-container-bottom .showcase-bottom-item2 {
-  transition: all 1s ease;
-}
-.showcase-container-bottom .showcase-bottom-item2:hover {
-  transform: scale(1.5);
-}
-
-
-.showcase-bottom-item1 .link1 i {
-  color: orange;
+.hero h2 {
+  grid-row: 3;
+  grid-column: 1 / span 3;
+  padding: 1rem;
+  animation: scale 0.6s ease-out backwards;
 }
 
-.showcase-bottom-item1 .link2 i {
-  color: blue;
+@keyframes scale {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(10);
+    color: red;
+  }
 }
 
-.html,
-.css,
-.projects {
-  width: 100%;
-  height: 100vh;
+.hero h3 {
+  animation: pointless 1s ease-out infinite;
+}
+
+@keyframes pointless {
+  0% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.hero .showcase-container {
+  grid-row: 4;
+  grid-column: 1 / span 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 80%;
+}
+
+.hero .showcase-container img {
+  width: auto;
+  height: auto;
+  border-radius: 50%;
+  transition: all 1s linear;
+  margin-bottom: 1rem;
+}
+
+.hero .showcase-container .showcase-item1,
+.hero .showcase-container .showcase-item2,
+.hero .showcase-container .showcase-item3 {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
-  justify-content: start;
+  justify-content: center;
   align-items: center;
-  padding-top: 3rem;
+  text-align: center;
 }
 
-#html {
-  background-color: coral;
+.hero .showcase-container .showcase-item1 img,
+.hero .showcase-container .showcase-item3 img {
+  animation: awesomeninjaflipY 0.6s linear forwards;
 }
-#css {
-  background-color: rebeccapurple;
+
+.hero .showcase-container .showcase-item2 img {
+  animation: awesomeninjaflipX 0.6s linear forwards;
 }
-#projects {
-  background-color: aqua;
+
+@keyframes awesomeninjaflipY {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+
+    transform: rotateY(720deg);
+  }
 }
+@keyframes awesomeninjaflipX {
+  from {
+    transform: rotateX(0deg);
+  }
+  to {
+
+    transform: rotateX(720deg);
+  }
+}
+
+/* CHILLZONE */
+
+.chillzone .photo-grid {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 3fr 3fr 1fr;
+  grid-gap: 2rem;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+}
+
+.chillzone h2 {
+  text-align: center;
+  grid-column: 1 / span 4;
+  grid-row: 1;
+  font-family: 'Rubik Wet Paint', cursive;
+  font-size: 3rem;
+  padding-top: 1rem;
+
+}
+
+.chillzone .photo-grid .item1 {
+  grid-row: 2;
+  grid-column: 2;
+}
+.chillzone .photo-grid .item2 {
+  grid-row: 2;
+  grid-column: 3;
+}
+.chillzone .photo-grid .item3 {
+  grid-row: 3;
+  grid-column: 2;
+}
+.chillzone .photo-grid .item4 {
+  grid-row: 3;
+  grid-column: 3;
+}
+
+.chillzone .photo-grid .item1,
+.chillzone .photo-grid .item2,
+.chillzone .photo-grid .item3,
+.chillzone .photo-grid .item4 {
+  transition: all 1s ease;
+}
+.chillzone .photo-grid .item1:hover,
+.chillzone .photo-grid .item2:hover,
+.chillzone .photo-grid .item3:hover,
+.chillzone .photo-grid .item4:hover {
+  transform: scale(1.1);
+}
+
+/* Footer */
 
 .footer {
   background: #555;
@@ -168,6 +230,7 @@ a {
 .footer .socials a {
   display: block;
   padding: 2rem;
+  color: #fff;
 }
 
 .footer .socials a i:hover {
@@ -175,6 +238,166 @@ a {
   background: #fff;
 }
 
+.chillzone {
+  background: url(../../assets/images/itamar_img/ninja-bg.jpg) center center/cover;
+}
 
-/* animations */
+/* anime */
+.anime {
+  background: url("../../assets/images/itamar_img/girls-last-tour-bg.jpg") no-repeat center center/cover;
+}
 
+.anime h1 {
+  color: #fff;
+  font-size: 3rem;
+  text-align: center;
+  grid-column: 1 / span 5;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 2fr 9fr;
+  height: 100vh;
+  align-items: center;
+  justify-items: center;
+}
+
+/* Card General Styling */
+
+.card {
+  font-family: 'Ceviche One', cursive;
+  background: black;
+  max-width: 200px;
+  border-radius: 10px;
+  transition: all 1s ease;
+}
+
+.card .container {
+  text-align: center;
+}
+
+.container h2,
+.container p {
+  padding: 1%;
+  color: white;
+}
+
+.card a {
+  display: inline-block;
+  padding: 1%;
+  margin-bottom: 10px;
+  color: rgb(0, 247, 255)
+}
+
+.cards-container .card img {
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  width: 100%;
+  object-fit: cover;
+  height: auto;
+}
+
+a:hover {
+  color:black;
+  background-color: rgb(0, 247, 255);
+}
+
+
+/* psycho-pass card styling */
+
+.cards-container .psy {
+  box-shadow: 5px 5px 50px rgb(73, 255, 1), -5px -5px 50px rgb(73, 255, 1);
+}
+
+.cards-container .psy .container {
+  color: white;
+}
+
+.cards-container .psy:hover {
+  box-shadow: 5px 5px 50px 5px rgb(73, 255, 1), -5px -5px 50px 5px rgb(73, 255, 1);
+  transform: scale(1.2);
+}
+
+/* Samurai Champloo  */
+
+.cards-container .samurai {
+  box-shadow: 5px 5px 50px rgb(255, 225, 1), -5px -5px 50px rgb(255, 225, 1);
+}
+
+.cards-container .samurai .container {
+  color: white;
+}
+
+.cards-container .samurai:hover {
+  box-shadow: 5px 5px 50px 5px rgb(255, 225, 1), -5px -5px 50px 5px rgb(255, 225, 1);
+  transform: scale(1.2);
+}
+/* Attack on Titan  */
+
+.cards-container .aot {
+  box-shadow: 5px 5px 50px black, -5px -5px 50px black;
+}
+
+.cards-container .aot .container {
+  color: white;
+}
+
+.cards-container .aot:hover {
+  box-shadow: 5px 5px 50px 5px black, -5px -5px 50px 5px black;
+  transform: scale(1.2);
+}
+/* Mushishi  */
+
+.cards-container .mushishi {
+  box-shadow: 5px 5px 50px white, -5px -5px 50px white;
+}
+
+.cards-container .mushishi .container {
+  color: white;
+}
+
+.cards-container .mushishi:hover {
+  box-shadow: 5px 5px 50px 5px white, -5px -5px 50px 5px white;
+  transform: scale(1.2);
+}
+/* Made in Abyss  */
+
+.cards-container .mia {
+  box-shadow: 5px 5px 50px rgb(0, 149, 255), -5px -5px 50px rgb(0, 149, 255);
+}
+
+.cards-container .mia .container {
+  color: white;
+}
+
+.cards-container .mia:hover {
+  box-shadow: 5px 5px 50px 5px rgb(0, 149, 255), -5px -5px 50px 5px rgb(0, 149, 255);
+  transform: scale(1.2);
+}
+
+/* Info Boxes */
+
+.info {
+  position: absolute;
+  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(87,255,0,1) 100%);
+  border: 1px solid black;
+  height: 100%;
+  width: 60vw;
+  top: 0;
+  left: 200px;
+}
+/* Psycho-Pass Info */
+
+.psy {
+  position: relative;
+}
+.psy .psy-info {
+  display: none;
+  z-index: 100;
+
+}
+
+.psy:hover .psy-info {
+  display: block;
+}
