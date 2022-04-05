@@ -5,34 +5,34 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="../styles/naama_portfolio/desktop.styles.css" type="text/css">
+    <link rel="stylesheet" href="/styles.css" type="text/css">
     <script src="https://kit.fontawesome.com/401cd4a2d7.js" crossorigin="anonymous"></script>
     <title>Naama's Portfolio</title>
-
-
 </head>
 
 <body>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="index.html#about">About</a></li>
-            <li><a href="index.html#cases">Cases</a></li>
-            <li><a href="index.html#blog">Blog</a></li>
-            <li><a href="index.html#contact">Contact</a></li>
-        </ul>
-    </nav>
-    <main>
-        <h1>Naama's Portfolio</h1>
-        <h2>Welcome to my site!</h2>
+    <section id="part1">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h1>Naama's Portfolio</h1>
+            <h2>Welcome to my site!</h2>
+        </main>
+    </section>
+    <section id="part2">
         <div class="container">
-
             <section class="content">
-                <h3></h3>
-                <p>
-                    I'm a programmer. I'm coding using Java, HTML and CSS.
-                </p>
-                <p> please view my works below.</p>
+                <h2>
+                    Hello, my name is Naama. I'm a fullstack developer. I code using Java, HTML and CSS.
+                </h2>
+                <h2> I welcome you to view my works.</h2>
             </section>
             <aside class="sidebar">
                 <h3>Contact Me</h3>
@@ -43,52 +43,101 @@
                         <a href="https://github.com/naamagi" class="fa-brands fa-github"></a>
                         <a href="#" class="fa-brands fa-instagram"></a>
                         <a href="#" class="fa-brands fa-linkedin"></a>
-
-
-
-                        <button type="button">Contact me</button>
                     </div>
                 </ul>
             </aside>
-            <a href="https://stupendous-pie-c5bbd4.netlify.app">
+            <a href="#part3">
                 <div class="box-1">
                     <h3>Tesla mockup</h3>
-                    <p>
-                        This project is meant to imitate the Model 3 page of Tesla website.
-                        This project was done using HTML and CSS and include use of span, pseudo-elements
-                        hover, fixed, relative and absolute position and z-index.
-                    </p>
                 </div>
             </a>
-            <a href="https://sparkly-panda-9882ca.netlify.app">
+            <a href="#part4">
                 <div class="box-2">
                     <h3>Hotel Website</h3>
-                    <p>
-                        This project of hotel website sample was written using CSS and HTML.
-                    </p>
                 </div>
             </a>
-            <a href="https://stellular-elf-6bfcf2.netlify.app">
+            <a href="#part5">
                 <div class="box-3">
                     <h3>Dropbox error page mockup</h3>
-                    <p>
-                        This is an imitation of Dropbox's 4xx error page using CSS and HTML.
-                    </p>
                 </div>
             </a>
-            <a href="https://radiant-alpaca-678d59.netlify.app/">
+            <a href="#part6">
                 <div class="box-4">
                     <h3>Pixar error page mockup</h3>
-                    <p>
-                        This is an imitation of Pixar's 4xx error page using CSS and HTML.
-                    </p>
                 </div>
             </a>
             <footer class="footer">
-                <p>Copyright &copy; 2022</p>
+                <p>Copyright &copy;Naama G. 2022</p>
             </footer>
+            <figure id="message_icon">
+                <button>
+                    <a href="#" class="fa-brands fa-whatsapp message_icon"></a>
+                </button>
+            </figure>
         </div>
-    </main>
+    </section>
+    <section id="part3" class="horizontal--section">
+        <a href="https://stupendous-pie-c5bbd4.netlify.app" id="car"></a>
+        <section id="car-text" class="vertical--section">
+            <h2>Tesla Mockup</h2>
+            <h3>
+                This project is meant to imitate the Model 3 page of Tesla website.
+                This project was done using HTML and CSS and include use of span, pseudo-elements,
+                hover, fixed, relative and absolute position and z-index.
+            </h3>
+            <a href="https://stupendous-pie-c5bbd4.netlify.app" class="projects">
+                <h2>Website</h2>
+            </a>
+            <a href="https://github.com/naamagi/Tesla.git" class="projects">
+                <h2>Github</h2>
+            </a>
+        </section>
+    </section>
+    <section id="part4" class="horizontal--section">
+        <section id="hotel-text" class="vertical--section">
+            <h2>Hotel Website</h2>
+            <h3>
+                This project of hotel website sample was written using CSS and HTML.
+            </h3>
+            <a href="https://sparkly-panda-9882ca.netlify.app" class="projects">
+                <h2>Website</h2>
+            </a>
+            <a href="https://github.com/naamagi/Hotel_website.git" class="projects">
+                <h2>Github</h2>
+            </a>
+        </section>
+        <a href="https://sparkly-panda-9882ca.netlify.app" id="hotel"></a>
+    </section>
+    <section id="part5" class="horizontal--section">
+        <a href="https://stellular-elf-6bfcf2.netlify.app" id="dropbox"></a>
+        <section id="dropbox-text" class="vertical--section">
+            <h2>Dropbox error page mockup</h2>
+            <h3>
+                This is an imitation of Dropbox's 4xx error page using CSS and HTML.
+            </h3>
+            <a href="https://stellular-elf-6bfcf2.netlify.app" class="projects">
+                <h2>Website</h2>
+            </a>
+            <a href="https://github.com/naamagi/Dropbox_Error_page.git" class="projects">
+                <h2>Github</h2>
+            </a>
+        </section>
+    </section>
+    <section id="part6" class="horizontal--section">
+        <section id="pixar-text" class="vertical--section">
+            <h2>Pixar error page mockup</h2>
+            <h3>
+                This is an imitation of Pixar's 4xx error page using CSS and HTML.
+            </h3>
+            <a href="https://radiant-alpaca-678d59.netlify.app/" class="projects">
+                <h2>Website</h2>
+            </a>
+            <a href="https://github.com/naamagi/Pixar_Error_page" class="projects">
+                <h2>Github</h2>
+            </a>
+        </section>
+        <a href="https://radiant-alpaca-678d59.netlify.app/" id="pixar"></a>
+    </section>
 </body>
 
 </html>
