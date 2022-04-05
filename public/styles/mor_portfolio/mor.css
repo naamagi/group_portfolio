@@ -13,9 +13,9 @@
   font-family: "DM Serif Text", sans-serif;
 }
 
-body {
-  width: 100vw;
-  height: 100vh;
+html, body {
+  width: 100%;
+  height: 1005;
   color: #333;
 }
 
@@ -26,7 +26,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-content: center;
-}
+ }
 
 main h1 { 
   text-align: center;
@@ -36,7 +36,7 @@ main h1 {
 
 
 .container {
-  height: 100%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -79,6 +79,7 @@ nav {
   font-weight: 400;
   top: 0;
   left: 0;
+  text-transform: capitalize;
 }
 
 #logo {
@@ -148,15 +149,16 @@ li a {
   background-color: #15F2D0; 
   }
 
- /* About Me */
- #about-page {
+/* About Me */
+#about-page {
    background-color: #ff7e72;
-  }
-  
-  #footer-about {
-    /* background-color: #ff3333; */
-    background-color: #ff5456;
- }
+}
+
+#about-page main h1 { 
+  text-align: left;
+  font-size: 3.2rem; 
+  padding: 1rem 6rem;
+}
 
 #about-page main p{
   padding: 1rem 6rem;
@@ -175,13 +177,14 @@ li a {
   margin-top: -0.1875rem;
 }
 
-
-#about-page main h1 { 
-  text-align: left;
-  font-size: 3.2rem; 
-  padding: 1rem 6rem;
+#footer-about {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  /* background-color: #ff3333; */
+  background-color: #ff5456;
 }
-
 
 /* Contact */
 #contact-page {
